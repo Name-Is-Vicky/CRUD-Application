@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "inter",sans-serif;
+}
+.container{
+    max-width: 600px;
+    margin: 20px auto;
+}
+h3{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px dashed rgba(25, 0, 255, 0.356);
+    color: rgb(0, 0, 0);
+
+}
+.btn{
+    color: rgb(0, 0, 0);
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ccc;
+    color: white;
+    border: 1px solid white;
+}
+.green{
+    background-color: green;
+    }
+.green:hover{
+background-color:rgb(0, 255, 0);
+color: black;
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.664);
+}
+.red:hover{
+    background-color: red;
+}
+.input-search{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+}
+.input-search input{
+    width: 300px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid aqua;
+    outline: none;
+}
+.tabel{
+    width: 100%;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+.tabel th,
+.tabel td{
+    border: 1px solid rgb(137, 139, 136);
+    padding: 8px;
+    font-weight: bold;
+}
+.tabel th{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.tabel tr:nth-child(even){
+    background-color: rgba(80, 76, 76, 0.274);
+}
+.tabel tr:hover{
+    background-color: rgba(121, 113, 113, 0.075);
+
+}
+.model{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.641);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+}
+.close{
+    float: right;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    transition: 0.3s linear all;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+   
+}
+.close:hover{
+    background-color: rgb(5, 243, 255);
+    color: black;
+}
+.model-content{
+    width: 80%;
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px ;
+}
+.input-group{
+    margin: 10px;
+}
+.input-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group label input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+}
+.input-group label input:focus{
+    border: 1px solid rgb(7, 248, 232);
+}
+
+@media only screen and (max-width: 380px) {
+
+    .container{
+        max-width: 380px;
+        margin: 0px;
+
+    }
+    .btn{
+        color: rgb(0, 0, 0);
+        padding: 3px 5px;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #ccc;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .green{
+        background-color: green;
+        }
+    .green:hover{
+    background-color:rgb(0, 255, 0);
+    color: black;
+    }
+    
+    .red{
+        background-color: rgba(255, 0, 0, 0.664);
+    }
+    .red:hover{
+        background-color: red;
+    }
+
+
+    .tabel{
+        width: 100%;
+        border-collapse: collapse;
+        cursor: pointer;
+        text-align: center;
+    }
+    .tabel th,
+    .tabel td{
+        border: 1px solid rgb(137, 139, 136);
+        padding: 2px;
+        font-weight: bold;
+    }
+    .input-search input{
+        margin: 0px 20px;
+    }
+    
+}
+
